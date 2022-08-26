@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 buildscript {
     repositories {
         mavenCentral()
@@ -40,3 +42,4 @@ dependencies {
 
 }
 
+>>>>>>> 63f24c26f99a80c8b6295f4b039cc5e99e67a57b
