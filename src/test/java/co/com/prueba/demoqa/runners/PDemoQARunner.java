@@ -9,5 +9,4 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/pdemoqa.feature",
         glue = "co/com/prueba/demoqa/stepdefinitions"
 )
-public class PDemoQARunner {
-}
+public class PDemoQARunner {}
