@@ -79,3 +79,4 @@ wrapper {
 
 gradle.startParameter.continueOnFailure = true
 test.finalizedBy(aggregate, reports)
+
