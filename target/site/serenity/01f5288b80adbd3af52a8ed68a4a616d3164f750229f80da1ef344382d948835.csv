@@ -1,2 +1,10 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
+<<<<<<< HEAD
 "Demo QA","Scenario","SUCCESS","2022-08-26T10:04:11.5343775-05:00[America/Bogota]","0.0","42.47"
+=======
+<<<<<<< HEAD
+"Review the operation of the alerts on the website","enter the page and make alerts","SUCCESS","2022-08-26T09:07:05.2745308-05:00[America/Mexico_City]","0.0","104.26"
+=======
+"Demo QA","Interact in the website","SUCCESS","2022-08-26T09:22:55.8982343-05:00[America/Bogota]","0.0","28.61"
+>>>>>>> 2deed3e3e46a277f7c29d434173b5ff5d6778333
+>>>>>>> 23b848596dcb9abcb00b5c45e434049a51026aff
