@@ -4,5 +4,6 @@ Feature: Demo QA
   to put my skills into practice
   Scenario: Interact in the website
     Given that Andres open de browser and enter the page 'https://demoqa.com/'
+    | button_option | color |
     When he select to the element option and the category dynamic properties
     Then He should see on the screen the selected button

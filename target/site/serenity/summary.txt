@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Serenity report generated 26-08-2022 10:01
+=======
+Serenity report generated 26-08-2022 09:26
+>>>>>>> 2deed3e3e46a277f7c29d434173b5ff5d6778333
 2 test scenarios 
 
 Passed:             0
