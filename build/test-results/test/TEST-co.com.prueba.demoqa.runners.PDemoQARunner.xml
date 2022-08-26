@@ -1,40 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.prueba.demoqa.runners.PDemoQARunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-7PSJJ0Q" time="0.0">
+<testsuite name="co.com.prueba.demoqa.runners.PDemoqaRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-7PSJJ0Q" time="0.0">
   <properties/>
   <system-out><![CDATA[
-?[33mUndefined scenarios:?[0m
-file:///D:/pruebaDemoqa/src/test/resources/features/pdemoqa.feature:5 # Interact in the website
+?[31mFailed scenarios:?[0m
+file:///D:/ideaproject/toolsQA/src/test/resources/features/pdemoqa.feature:5 # Interact in the website
 
-1 Scenarios (?[33m1 undefined?[0m)
-3 Steps (?[36m2 skipped?[0m, ?[33m1 undefined?[0m)
-0m0,862s
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[36m2 skipped?[0m)
+0m1,060s
 
 
-You can implement missing steps with the snippets below:
+io.cucumber.core.exception.CucumberException: Step [that Andres open de browser and enter the page {string}] is defined with 1 parameters at 'co.com.prueba.demoqa.stepdefinitions.PDemoqaStepDefinition.that_andres_open_de_browser_and_enter_the_page(java.lang.String)'.
+However, the gherkin step has 2 arguments:
+ * 'https://demoqa.com/'
+ * Table:
+      | button_option | color |
 
-@Given("that Andres open de browser and enter the page {string}")
-public void that_andres_open_de_browser_and_enter_the_page(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@When("he select to the element option and the category dynamic properties")
-public void he_select_to_the_element_option_and_the_category_dynamic_properties() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@Then("He should see on the screen the selected button")
-public void he_should_see_on_the_screen_the_selected_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+Step text: that Andres open de browser and enter the page 'https://demoqa.com/'
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:234)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:262)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 
 
 ]]></system-out>
-  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///D:/pruebaDemoqa/src/test/resources/features/pdemoqa.feature
-[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///D:/pruebaDemoqa/src/test/resources/features/pdemoqa.feature is not under the 'features' directory. Requirements report will not be correctly generated!
-[Test worker] INFO  - 
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///D:/ideaproject/toolsQA/src/test/resources/features/pdemoqa.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///D:/ideaproject/toolsQA/src/test/resources/features/pdemoqa.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO  - ?[96m
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -49,9 +86,16 @@ public void he_should_see_on_the_screen_the_selected_button() {
  Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
  Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
 -------------------------------------------------------------------------------------
-
+?[0m
 [Test worker] INFO  - Test Suite Started: Demo QA
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@36ddaebf: Generating report for test outcome: Demo QA:Interact in the website
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@680a66dd: Generating report for test outcome: Demo QA:Interact in the website
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@14b789f6: Generating report for test outcome: Demo QA:Interact in the website
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@75d4a80f: Generating report for test outcome: Demo QA:Interact in the website
+[pool-2-thread-1] INFO serenity.reporting - 
+--------------------------------------
+| TEST NAME:   ?[1mInteract in the website?[0m
+| RESULT:      ?[91mBroken?[0m
+| REQUIREMENT: Demo QA
+| REPORT:      ?[96mfile:///D:/ideaproject/toolsQA/target/site/serenity/6911bd34fd67ef3731a598f56d5f402fc54404ddf0820eb0a8436432ceb3a859.html?[0m
+--------------------------------------
 ]]></system-err>
 </testsuite>
