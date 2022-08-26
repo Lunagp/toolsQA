@@ -86,31 +86,35 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>
-1 Scenarios (?[33m1 undefined?[0m)
-3 Steps (?[33m3 undefined?[0m)
-0m0,484s
+?[31mFailed scenarios:?[0m
+file:///C:/Users/ADMIN/IdeaProjects/toolsQA/src/test/resources/features/alertsqa.feature:3 # enter the page and make alerts
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[36m1 skipped?[0m, ?[32m1 passed?[0m)
+0m29,865s
 
 
-You can implement missing steps with the snippets below:
+java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;this.hisBrowser&quot; is null
+	at co.com.prueba.demoqa.tasks.ClickAlerts.performAs(ClickAlerts.java:29)
+	at co.com.prueba.demoqa.tasks.ClickAlerts$ByteBuddy$bBYc821O.performAs$accessor$d1HerQBV(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at co.com.prueba.demoqa.tasks.ClickAlerts$ByteBuddy$bBYc821O.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at co.com.prueba.demoqa.stepdefinitions.AlertsStepDefinitions.click_to_see_how_each_alert_works(AlertsStepDefinitions.java:34)
+	at ?.click to see how each alert works(file:///C:/Users/ADMIN/IdeaProjects/toolsQA/src/test/resources/features/alertsqa.feature:5)
 
-
-@Given(&quot;^go to the website \&quot;([^\&quot;]*)\&quot;$&quot;)
-public void go_to_the_website(String arg1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@When(&quot;^click to see how each alert works$&quot;)
-public void click_to_see_how_each_alert_works() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@Then(&quot;^verification message$&quot;)
-public void verification_message() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
 
 </pre>
 </span>
@@ -118,7 +122,9 @@ public void verification_message() {
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[96m
+<pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/ADMIN/IdeaProjects/toolsQA/src/test/resources/features/alertsqa.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/ADMIN/IdeaProjects/toolsQA/src/test/resources/features/alertsqa.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO  - ?[96m
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -130,22 +136,20 @@ public void verification_message() {
                                                                                      
  News and tutorials at http://www.serenity-bdd.info                                  
  Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
- Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
  Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
- Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 ?[0m
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Review the operation of the alerts on the website
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: enter the page and make alerts
--------------------------------------------------------------------(review-the-operation-of-the-alerts-on-the-website;enter-the-page-and-make-alerts)
+[Test worker] INFO  - Test Suite Started: Review the operation of the alerts on the website
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@b788dc2: Generating report for test outcome: Review the operation of the alerts on the website:enter the page and make alerts
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@4e756867: Generating report for test outcome: Review the operation of the alerts on the website:enter the page and make alerts
+[pool-2-thread-1] INFO serenity.reporting - 
+---------------------------------------------
+| TEST NAME:   ?[1menter the page and make alerts?[0m
+| RESULT:      ?[91mBroken?[0m
+| REQUIREMENT: Review the operation of the alerts on the website
+| REPORT:      ?[96mfile:///C:/Users/ADMIN/IdeaProjects/toolsQA/target/site/serenity/22fb605882477a27fcca0a03f0cb5e13292187117dad278ff880f507108fc9cd.html?[0m
+---------------------------------------------
 </pre>
 </span>
 </div>
@@ -157,7 +161,7 @@ TEST STARTED: enter the page and make alerts
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 26/08/2022, 8:28:00 a. m.</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 26/08/2022, 10:01:43 a. m.</p>
 </div>
 </div>
 </body>
