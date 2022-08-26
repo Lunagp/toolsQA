@@ -1,20 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Demo QA" tests="1" skipped="1" failures="0" errors="0" timestamp="2022-08-26T13:13:53" hostname="DESKTOP-7PSJJ0Q" time="0.046">
+<testsuite name="Demo QA" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-08-26T13:34:26" hostname="DESKTOP-7PSJJ0Q" time="0.573">
   <properties/>
-  <testcase name="Interact in the website" classname="Demo QA" time="0.046">
-    <skipped/>
+  <testcase name="Interact in the website" classname="Demo QA" time="0.573">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step &quot;that Andres open de browser and enter the page 'https://demoqa.com/'&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;that Andres open de browser and enter the page {string}&quot;)&#10;public void that_andres_open_de_browser_and_enter_the_page(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@When(&quot;he select to the element option and the category dynamic properties&quot;)&#10;public void he_select_to_the_element_option_and_the_category_dynamic_properties() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;He should see on the screen the selected button&quot;)&#10;public void he_should_see_on_the_screen_the_selected_button() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step &quot;that Andres open de browser and enter the page 'https://demoqa.com/'&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Given(&quot;that Andres open de browser and enter the page {string}&quot;)
+public void that_andres_open_de_browser_and_enter_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When(&quot;he select to the element option and the category dynamic properties&quot;)
+public void he_select_to_the_element_option_and_the_category_dynamic_properties() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;He should see on the screen the selected button&quot;)
+public void he_should_see_on_the_screen_the_selected_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
- _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
-(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
- |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
-(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
-                                                                                
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///D:/pruebaDemoqa/src/test/resources/features/pdemoqa.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///D:/pruebaDemoqa/src/test/resources/features/pdemoqa.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-TEST PENDING: Interact in the website
----------------------------------------------------------------------------------
+Interact in the website(demo-qa;interact-in-the-website)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+ |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+
+Interact in the website
+-----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>
